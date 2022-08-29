@@ -1,27 +1,91 @@
-<!DOCTYPE html> <!-- teste -->
+<!DOCTYPE html>
+<!-- teste -->
 
 <html lang="pt/br">
+  <head>
+    <meta charset="utf-8" />
 
-<head>
-    <meta charset="utf-8"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Página teste</title>
-</head>
-<body>
-    <p>Exemplo tag p</p>
-    <h1>Cabecalho</h1>
-    <h2>Cabecalho</h2>
-    <h3>Cabecalho</h3>
-    <h4>Cabecalho</h4>
-    <h5>Cabecalho</h5>
-    <h6>Cabecalho</h6>
-    <b>Bold</b> <!-- Significante-->
-    <br> <!-- Quebra linha-->
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/> Quibusdam recusandae totam hic atque dolores sed ducimus quis <br/> laborum fugiat minus ea dolore adipisci distinctio,<br> repudiandae culpa praesentium neque harum. Consectetur.</p>
-    <h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, asperiores. Ducimus cum ipsa qui doloribus!</p>
-    </h1>
-    <i>Texto exemplo</i><!-- Itálico-->
-    <u></u> <!--Lista não ordenada-->
-    <font color="f44d84">alguma coisa</font>
-</body>
+    <style>
+      :root {
+        --background: #f7f5f2;
+        --primary: #ffca3a;
+        --secondary: #1982c4;
+        --success: #8ac926;
+        --danger: #ff595e;
+        --dark: #222;
+      }
+      *,
+      *::after,
+      *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        font-size: 62.5%;
+      }
+      .cabecalho {
+        background-image: url("image/banner1.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 60vh;
+      }
+      .navigation {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        background-color: var(--primary);
+      }
+      .navigation__item {
+        padding: 1rem;
+        border-bottom: 3px solid transparent;
+      }
+      .navigation__item:hover {
+        border-bottom: 3px solid var(--dark);
+      }
+      .navigation__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--dark);
+        font-weight: bolder;
+        font-size: 1.5rem;
+      }
+      .navigation__link:visited {
+        color: var(--success);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <ul class="navigation">
+        <li class="navigation__item">
+          <a class="navigation__link" href="index.html">Home</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="downloads.html">Downloads</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="sobre.html">Sobre</a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <section class="filmes">
+        <!-- <div class="card">
+                <img src="./image/banner1.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div> -->
+      </section>
+    </main>
+  </body>
 </html>
