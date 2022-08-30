@@ -11,62 +11,17 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles.css" />
 
     <title>Página teste</title>
-    <style>
-      :root {
-        --background: #f7f5f2;
-        --primary: #ffca3a;
-        --secondary: #1982c4;
-        --success: #8ac926;
-        --danger: #ff595e;
-        --dark: #222;
-      }
-      *,
-      *::after,
-      *::before {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: "Montserrat", sans-serif;
-        font-size: 62.5%;
-      }
-      .cabecalho {
-        background-image: url("image/banner1.jpg");
-        background-size: cover;
-        background-position: center;
-        height: 60vh;
-      }
-      .navigation {
-        display: flex;
-        justify-content: space-evenly;
-        list-style: none;
-        background-color: var(--primary);
-      }
-      .navigation__item {
-        padding: 1rem;
-        border-bottom: 3px solid transparent;
-      }
-      .navigation__item:hover {
-        border-bottom: 3px solid var(--dark);
-      }
-      .navigation__link {
-        text-decoration: none;
-        text-transform: uppercase;
-        color: var(--dark);
-        font-weight: bolder;
-        font-size: 1.5rem;
-      }
-      .navigation__link:visited {
-        color: var(--success);
-      }
-    </style>
+    <style></style>
   </head>
   <body>
     <header class="cabecalho">
+      <div class="heading">
+        <h1>Filmes Torrent</h1>
+        <span>Sit | Watch | Enjoy</span>
+      </div>
       <ul class="navigation">
         <li class="navigation__item">
           <a class="navigation__link" href="index.html">Home</a>
@@ -81,10 +36,18 @@
     </header>
     <main>
       <section class="filmes">
-        <!-- <div class="card">
-                <img src="./image/banner1.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div> -->
+        <div class="card">
+          <img src="./image/banner2.jpg" alt="" />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="card">
+          <img src="./image/banner3.png" alt="" />
+          <p>Lorem ipsum dolor sit.</p>
+        </div>
+        <div class="card">
+          <img src="./image/banner1.jpg" alt="" />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
       </section>
     </main>
   </body>
