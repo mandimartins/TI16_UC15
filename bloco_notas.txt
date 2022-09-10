@@ -1,3 +1,0 @@
-: vermelho => #ff595e, amarelo => #ffca3a, verde => #8ac926, azul => #1982c4, roxo => #6a4c93
-
-TEMA: site sobre filmes
