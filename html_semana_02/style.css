@@ -1,0 +1,240 @@
+:root {
+  --dark: #120632;
+  --dark-secondary: #333;
+  --dark-green: #53838a;
+  --light-green: #a7ea7e;
+  --orange: #dd8563;
+  --white: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  outline: none;
+  border: none;
+  padding: 1rem;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%; /* fonte padrão 16px  => agora 10px == 1rem */
+  background: rgb(167, 234, 126);
+  background: linear-gradient(
+    0deg,
+    rgba(167, 234, 126, 1) 0%,
+    rgba(83, 131, 138, 1) 100%
+  );
+}
+
+.header {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(./assets/banner1.jpg);
+  background-color: rgba(0, 0, 0, 0.7);
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+}
+
+.navegacao {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.navegacao ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navegacao__item {
+  list-style-type: none;
+  border-bottom: 2px solid transparent;
+  transition: transform ease-in-out 0.2s;
+}
+
+.navegacao__item:hover {
+  border-bottom: 2px solid var(--dark);
+  transform: skewY(2deg);
+}
+
+.navegacao__link {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.navegacao__link:visited {
+  color: var(--dark);
+}
+
+.titulo-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--dark);
+  font-weight: bold;
+  text-align: center;
+  flex-grow: 7;
+  text-align: center;
+  font-weight: bolder;
+  color: var(--white);
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+.titulo-header span {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.principal {
+  min-height: 100vhs;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  padding-top: 3rem;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--dark);
+  transition: transform ease-in-out 0.2s;
+}
+
+.heading:hover {
+  transform: skewY(2deg);
+}
+
+.destaque {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.cartao {
+  width: 30rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1rem;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.cartao__saber-mais {
+  display: none;
+}
+
+.cartao:hover > .cartao__saber-mais {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartao__banner {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.botao {
+  background-color: var(--light-green);
+  color: var(--dark);
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all ease 0.5s;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.botao:hover {
+  transform: scale(1.2);
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cartao__descricao {
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--dark-secondary);
+}
+
+.cartao__descricao span {
+  font-weight: 900;
+}
+
+.rodape {
+  display: flex;
+  flex-direction: column;
+  border-top: solid 1px #ccc;
+  align-items: center;
+  padding: 2rem;
+  color: var(--dark);
+}
+
+.rodape p {
+  font-size: 0.9rem;
+}
+
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes-sociais > * {
+  margin: 1rem;
+}
+
+.encomendas-precos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.encomendas-precos > * {
+  margin: 1rem;
+}
+
+/*======================= QUEM SOMOS ==================*/
+
+.quem-somos {
+  height: 100vh;
+}
+
+.quem-somos p {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.quem-somos h1 {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
